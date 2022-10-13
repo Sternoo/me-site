@@ -24,6 +24,7 @@ export const NavBar = () => {
   }, []);
 
   const onUpdateActiveLink = (value) => {
+    console.log(value);
     setActiveLink(value);
   };
 
@@ -37,7 +38,7 @@ export const NavBar = () => {
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="ms-auto">
             <Nav.Link
               href="#home"
               className={
