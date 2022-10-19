@@ -31,7 +31,7 @@ export const Newsletter = ({ onValidated, status, message }) => {
           {status === "success" && <Alert variant="success">{message}</Alert>}
         </Col>
         <Col md={6} xl={7}>
-          <form onSubmit={{ handleSubmit }}>
+          <form onSubmit={ handleSubmit }>
             <div className="new-email-bx">
               <input
                 value={email}
